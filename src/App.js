@@ -45,6 +45,9 @@ const App = () => {
         else if (tiktocArray[2] === tiktocArray[4] && tiktocArray[2] === tiktocArray[6] && tiktocArray[2] !== "") {
               setWinMessage(`${tiktocArray[2]} is the winner`)
         }
+        else if(tiktocArray.includes("")==false){
+            setWinMessage("Draw")
+        }
     }
     
     // put cross or circle on tic tok toe
